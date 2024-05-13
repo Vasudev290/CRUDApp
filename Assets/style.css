@@ -1,0 +1,17 @@
+
+body{
+    background: #1d2630;
+}
+*{
+   /*  padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+    color: #fff;
+}
+
+/* body{
+    background: #1d2630;
+} */
+#Update{
+    display: none;
+}

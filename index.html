@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+
+    <!--   Icon Link -->
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/04/07/Job-application-icon-Graphics-10528638-1-1-580x386.jpg">
+
+    <!--  Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- /bootstrap slim or proper.js file -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!--  StyleSheet file -->
+    <link rel="stylesheet" href="./Assets/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5 mb-5">CRUD Application</h2>
+        <div class="mb-5">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                   <label for="name">Name</label>
+                   <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" />
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="age">Age</label>
+                    <input type="number" name="age" class="form-control" id="age" placeholder="Enter Age" />
+                 </div>
+                 <div class="form-group col-md-6 mb-3">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" />
+                 </div>
+                 <div class="form-group col-md-6 mb-3">
+                    <label for="dob">DOB</label>
+                    <input type="date" name="dob" class="form-control" id="dob" placeholder="Enter Date-of-Birth" />
+                 </div>
+                 <div class="form-group col-md-6 mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" />
+                 </div>
+                 <div class="form-group col-md-6 mb-3">
+                    <label for="number">Number</label>
+                    <input type="number" name="number" class="form-control" id="number" placeholder="Enter Number" />
+                 </div>
+                 <div class="col-lg-12 mt-5">
+                    <button class="btn btn-success" id="submit" onclick ="AddData()">Add Data</button>
+                    <button class="btn btn-primary" id="update" onclick="updateData()">Update</button>
+                 </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table table-bordered" id="crudTable">
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Age</td>
+                            <td>Address</td>
+                            <td>DOB</td>
+                            <td>Email</td>
+                            <td>Number</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./Assets/work.js"></script>
+</html>
